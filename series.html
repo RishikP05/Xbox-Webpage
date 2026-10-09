@@ -1,46 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Defines the character encoding for the page. -->
+    <!-- Defines the character encoding. -->
     <meta charset="UTF-8">
-    <!-- Makes the page display correctly on different screen sizes. -->
+
+    <!-- Makes the page responsive. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Connects the page to the external CSS stylesheet. -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Sets the browser tab title. -->
+
+    <!-- Connects the CSS stylesheet. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connects the theme JavaScript file. -->
+    <script src="theme.js" defer></script>
+
     <title>Xbox Series</title>
 </head>
 <body>
-    <!-- Groups the webpage content inside one container. -->
+    <!-- Main webpage container. -->
     <div id="container">
-        <!-- Displays the main page heading. -->
-        <header><h1>Xbox Consoles</h1><h2>Series X and Series S</h2></header>
 
-        <!-- Provides relative links to the three pages. -->
+        <!-- Displays the page heading. -->
+        <header>
+            <h1>Xbox Consoles</h1>
+            <h2>Series X and Series S</h2>
+        </header>
+
+        <!-- Navigation links to the website pages. -->
         <nav>
             <a href="index.html">Home</a><br>
             <a href="series.html">Xbox Consoles</a><br>
-            <a href="gaming.html">Xbox Game Pass</a>
+            <a href="gaming.html">Xbox Game Pass</a><br>
             <a href="about.html">About</a>
         </nav>
 
-        <!-- Displays a real Xbox Series X product image. -->
-        <img class="page-image" src="images/xbox-series-x.jpg" alt="Xbox Series X console">
+        <!-- Switches between light and dark mode. -->
+        <button class="theme-toggle" type="button">Dark Mode</button>
 
-        <!-- Displays a real Xbox Series S product image. -->
-        <img class="page-image" src="images/xbox-series-x-and-s.jpg" alt="Xbox Series S console">
+        <!-- Displays the Xbox Series X image. -->
+        <img class="page-image" src="images/xbox-series-x.jpg"
+             alt="Xbox Series X console">
 
-        <!-- Displays the first paragraph using its own CSS style. -->
-        <p class="paragraph-one">The Xbox Series X is the more powerful console in the Series family. It is designed for players who want high performance, fast loading, and features such as 4K gaming.</p>
-        <!-- Displays the second paragraph using a different CSS style. -->
-        <p class="paragraph-two">The Xbox Series S is smaller and designed as a more compact, all-digital option. It supports modern Xbox games while taking up less space.</p>
-        <!-- Displays the third paragraph using a third CSS style. -->
-        <p class="paragraph-three">Both consoles use fast SSD storage, support modern Xbox features, and can play a large selection of games. The main differences are size, performance, storage, and disc support.</p>
+        <!-- Displays the Xbox Series S image. -->
+        <img class="page-image" src="images/xbox-series-x-and-s.jpg"
+             alt="Xbox Series S console">
 
-        <!-- Creates a bulleted list of Xbox Series features. -->
+        <!-- Describes the Xbox Series X. -->
+        <p class="paragraph-one">
+            The Xbox Series X is the more powerful console in the
+            Series family. It is designed for players who want high
+            performance, fast loading, and features such as 4K gaming.
+        </p>
+
+        <!-- Describes the Xbox Series S. -->
+        <p class="paragraph-two">
+            The Xbox Series S is smaller and designed as a more
+            compact, all-digital option. It supports modern Xbox
+            games while taking up less space.
+        </p>
+
+        <!-- Compares the two Xbox consoles. -->
+        <p class="paragraph-three">
+            Both consoles use fast SSD storage, support modern Xbox
+            features, and can play a large selection of games.
+            The main differences are size, performance, storage,
+            and disc support.
+        </p>
+
+        <!-- Lists Xbox Series features. -->
         <h3>Xbox Series Features</h3>
         <ul>
-            <!-- Creates individual bullet points. -->
             <li>Fast SSD storage</li>
             <li>Quick Resume</li>
             <li>High-resolution gaming</li>
@@ -48,19 +77,31 @@
             <li>Backward compatibility</li>
         </ul>
 
-        <!-- Creates a table comparing the Xbox Series consoles. -->
+        <!-- Compares the consoles using a table. -->
         <h3>Console Comparison</h3>
         <table>
-            <!-- Creates the table headings. -->
-            <tr><th>Console</th><th>Main Focus</th><th>Disc Drive</th></tr>
-            <!-- Adds the Xbox Series X information. -->
-            <tr><td>Xbox Series X</td><td>High performance</td><td>Available on disc-drive models</td></tr>
-            <!-- Adds the Xbox Series S information. -->
-            <tr><td>Xbox Series S</td><td>Compact digital gaming</td><td>Digital only</td></tr>
+            <tr>
+                <th>Console</th>
+                <th>Main Focus</th>
+                <th>Disc Drive</th>
+            </tr>
+            <tr>
+                <td>Xbox Series X</td>
+                <td>High performance</td>
+                <td>Available on disc-drive models</td>
+            </tr>
+            <tr>
+                <td>Xbox Series S</td>
+                <td>Compact digital gaming</td>
+                <td>Digital only</td>
+            </tr>
         </table>
 
-        <!-- Displays the bottom section of the page. -->
-        <footer><p>Xbox Consoles</p></footer>
+        <!-- Displays the page footer. -->
+        <footer>
+            <p>Xbox Consoles</p>
+        </footer>
     </div>
 </body>
 </html>
+
