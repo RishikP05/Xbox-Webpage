@@ -1,3 +1,25 @@
+/* CSS variables for the light theme. */
+:root {
+    --about-bg: #f5f7f5;
+    --about-surface: #ffffff;
+    --about-text: #333333;
+    --about-heading: #159a15;
+    --about-link-hover: #107c10;
+    --about-header: #121212;
+    --about-header-text: #ffffff;
+}
+
+/* CSS variables for the dark theme. */
+[data-theme="dark"] {
+    --about-bg: #101510;
+    --about-surface: #1c241c;
+    --about-text: #f1f5f1;
+    --about-heading: #80c81a;
+    --about-link-hover: #a6e85a;
+    --about-header: #080d08;
+    --about-header-text: #ffffff;
+}
+
 /* Sets the overall page font, background, text color, and spacing. */
 body {
     font-family: Arial, sans-serif;
