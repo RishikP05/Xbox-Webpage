@@ -1,42 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Defines the character encoding for the page. -->
+    <!-- Defines the character encoding. -->
     <meta charset="UTF-8">
-    <!-- Makes the page display correctly on different screen sizes. -->
+
+    <!-- Makes the page responsive. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Connects the page to the external CSS stylesheet. -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Sets the browser tab title. -->
+
+    <!-- Connects the external stylesheet. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connects the JavaScript theme system. -->
+    <script src="theme.js" defer></script>
+
     <title>Xbox Game Pass</title>
 </head>
 <body>
-    <!-- Groups the webpage content inside one container. -->
+    <!-- Main webpage container. -->
     <div id="container">
-        <!-- Displays the main page heading. -->
-        <header><h1>Xbox Game Pass</h1><h2>A Large Library of Games</h2></header>
 
-        <!-- Provides relative links to the three pages. -->
+        <!-- Displays the page heading. -->
+        <header>
+            <h1>Xbox Game Pass</h1>
+            <h2>A Large Library of Games</h2>
+        </header>
+
+        <!-- Navigation links to the website pages. -->
         <nav>
             <a href="index.html">Home</a><br>
             <a href="series.html">Xbox Series</a><br>
-            <a href="gaming.html">Xbox Game Pass</a>
+            <a href="gaming.html">Xbox Game Pass</a><br>
+            <a href="about.html">About</a>
         </nav>
 
-        <!-- Displays a real gaming image related to Xbox Game Pass. -->
-        <img class="page-image" src="images/xbox-game-pass.jpg" alt="Xbox Game Pass game lineup">
+        <!-- Switches between light and dark themes. -->
+        <button class="theme-toggle" type="button">Dark Mode</button>
 
-        <!-- Displays the first paragraph using its own CSS style. -->
-        <p class="paragraph-one">Xbox Game Pass is a subscription service that gives members access to a large library of games. The library includes games for Xbox consoles, PC, and cloud gaming depending on the plan.</p>
-        <!-- Displays the second paragraph using a different CSS style. -->
-        <p class="paragraph-two">The Game Pass catalog changes over time as games are added and removed. Xbox currently describes the service as offering hundreds of games, and some plans include games on their release day.</p>
-        <!-- Displays the third paragraph using a third CSS style. -->
-        <p class="paragraph-three">Game Pass can also include benefits such as online console multiplayer, discounts, cloud gaming, and other extras depending on the membership plan.</p>
+        <!-- Displays an Xbox Game Pass image. -->
+        <img class="page-image" src="images/xbox-game-pass.jpg"
+             alt="Xbox Game Pass game lineup">
 
-        <!-- Creates a bulleted list of Game Pass benefits. -->
+        <!-- Introduces Xbox Game Pass. -->
+        <p class="paragraph-one">
+            Xbox Game Pass is a subscription service that gives
+            members access to a large library of games. The library
+            includes games for Xbox consoles, PC, and cloud gaming
+            depending on the plan.
+        </p>
+
+        <!-- Describes the Game Pass catalog. -->
+        <p class="paragraph-two">
+            The Game Pass catalog changes over time as games are
+            added and removed. Xbox currently describes the service
+            as offering hundreds of games, and some plans include
+            games on their release day.
+        </p>
+
+        <!-- Explains additional membership benefits. -->
+        <p class="paragraph-three">
+            Game Pass can also include benefits such as online
+            console multiplayer, discounts, cloud gaming, and
+            other extras depending on the membership plan.
+        </p>
+
+        <!-- Lists Game Pass benefits. -->
         <h3>Game Pass Benefits</h3>
         <ul>
-            <!-- Creates individual bullet points. -->
             <li>Hundreds of games</li>
             <li>Day-one game releases on eligible plans</li>
             <li>Online console multiplayer on eligible plans</li>
@@ -44,21 +74,31 @@
             <li>Member discounts and rewards</li>
         </ul>
 
-        <!-- Creates a table summarizing Game Pass features. -->
+        <!-- Displays a table of Game Pass features. -->
         <h3>Game Pass Overview</h3>
         <table>
-            <!-- Creates the table headings. -->
-            <tr><th>Feature</th><th>Game Pass</th></tr>
-            <!-- Adds the game library information. -->
-            <tr><td>Game library</td><td>Hundreds of games</td></tr>
-            <!-- Adds the day-one information. -->
-            <tr><td>Day-one games</td><td>Available with eligible plans</td></tr>
-            <!-- Adds the cloud gaming information. -->
-            <tr><td>Cloud gaming</td><td>Available with eligible plans</td></tr>
+            <tr>
+                <th>Feature</th>
+                <th>Game Pass</th>
+            </tr>
+            <tr>
+                <td>Game library</td>
+                <td>Hundreds of games</td>
+            </tr>
+            <tr>
+                <td>Day-one games</td>
+                <td>Available with eligible plans</td>
+            </tr>
+            <tr>
+                <td>Cloud gaming</td>
+                <td>Available with eligible plans</td>
+            </tr>
         </table>
 
-        <!-- Displays the bottom section of the page. -->
-        <footer><p>Xbox Game Pass</p></footer>
+        <!-- Displays the page footer. -->
+        <footer>
+            <p>Xbox Game Pass</p>
+        </footer>
     </div>
 </body>
 </html>
