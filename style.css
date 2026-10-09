@@ -1,51 +1,58 @@
-/* CSS variables for the light theme. */
+
+/* CSS variables for the default light theme. */
 :root {
-    --about-bg: #f5f7f5;
-    --about-surface: #ffffff;
-    --about-text: #333333;
-    --about-heading: #159a15;
-    --about-link-hover: #107c10;
-    --about-header: #121212;
-    --about-header-text: #ffffff;
+    --page-bg: #eeeeee;
+    --surface: #ffffff;
+    --list-bg: #f5f5f5;
+    --text: #222222;
+    --header-bg: #171717;
+    --header-text: #ffffff;
+    --accent: #76b900;
+    --link: #4f8a00;
+    --border: #bbbbbb;
+    --table-border: #555555;
 }
 
-/* CSS variables for the dark theme. */
+/* CSS variables for the alternate dark theme. */
 [data-theme="dark"] {
-    --about-bg: #101510;
-    --about-surface: #1c241c;
-    --about-text: #f1f5f1;
-    --about-heading: #80c81a;
-    --about-link-hover: #a6e85a;
-    --about-header: #080d08;
-    --about-header-text: #ffffff;
+    --page-bg: #101510;
+    --surface: #1c241c;
+    --list-bg: #293329;
+    --text: #f1f5f1;
+    --header-bg: #080d08;
+    --header-text: #ffffff;
+    --accent: #80c81a;
+    --link: #a6e85a;
+    --border: #526252;
+    --table-border: #738173;
 }
 
-/* Sets the overall page font, background, text color, and spacing. */
+/* Sets the page font, background, and text color. */
 body {
     font-family: Arial, sans-serif;
-    background-color: #eeeeee;
-    color: #222222;
+    background-color: var(--page-bg);
+    color: var(--text);
     margin: 0;
 }
 
-/* Creates a centered container for the webpage content. */
+/* Creates the centered content container. */
 #container {
     width: 85%;
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--surface);
     padding: 20px;
-    border: 2px solid #76b900;
+    border: 2px solid var(--accent);
 }
 
-/* Styles and centers the page header. */
+/* Styles the page header. */
 header {
-    background-color: #171717;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--header-text);
     padding: 20px;
     text-align: center;
 }
 
-/* Centers the navigation links and adds spacing around them. */
+/* Centers the navigation links. */
 nav {
     text-align: center;
     margin: 20px 0;
@@ -53,80 +60,99 @@ nav {
 
 /* Styles the navigation links. */
 nav a {
-    color: #4f8a00;
+    color: var(--link);
     font-weight: bold;
     text-decoration: none;
     margin: 0 10px;
 }
 
-/* Changes the link appearance when the mouse is over a link. */
+/* Changes the navigation link color on hover. */
 nav a:hover {
-    color: #76b900;
+    color: var(--accent);
     text-decoration: underline;
 }
 
-/* Sizes the page images and adds spacing and a border. */
+/* Styles the images on each page. */
 .page-image {
     width: 100%;
     max-width: 1000px;
     display: block;
     margin: 20px auto;
-    border: 3px solid #76b900;
+    border: 3px solid var(--accent);
 }
 
-/* Styles the first paragraph with normal Verdana text. */
+/* Styles the first paragraph. */
 .paragraph-one {
     font-family: Verdana, sans-serif;
-    color: black;
+    color: var(--text);
     font-size: 16px;
 }
 
-/* Styles the second paragraph with a slightly different Verdana font size. */
+/* Styles the second paragraph. */
 .paragraph-two {
     font-family: Verdana, sans-serif;
-    color: black;
+    color: var(--text);
     font-size: 17px;
 }
 
-/* Styles the third paragraph with centered Verdana text. */
+/* Styles the third paragraph. */
 .paragraph-three {
     font-family: Verdana, sans-serif;
-    color: black;
+    color: var(--text);
     font-size: 16px;
     text-align: center;
 }
 
-/* Adds spacing, a background, and a border to the bulleted list. */
+/* Styles the bulleted lists. */
 ul {
-    background-color: #f5f5f5;
+    background-color: var(--list-bg);
     padding: 20px 40px;
-    border: 1px solid #bbbbbb;
+    border: 1px solid var(--border);
 }
 
-/* Makes the table fill the content area and combines its borders. */
+/* Styles the tables. */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-/* Adds borders, padding, and alignment to table cells. */
+/* Styles table cells. */
 th, td {
-    border: 1px solid #555555;
+    border: 1px solid var(--table-border);
     padding: 10px;
     text-align: left;
 }
 
 /* Styles the table heading row. */
 th {
-    background-color: #171717;
-    color: white;
+    background-color: var(--header-bg);
+    color: var(--header-text);
 }
 
-/* Adds a border above the footer and centers its text. */
+/* Styles the page footer. */
 footer {
     margin-top: 25px;
     padding-top: 15px;
-    border-top: 2px solid #76b900;
+    border-top: 2px solid var(--accent);
     text-align: center;
+}
+
+/* Styles the light and dark mode button. */
+.theme-toggle {
+    display: block;
+    margin: 12px auto;
+    padding: 10px 15px;
+    background-color: var(--list-bg);
+    color: var(--text);
+    border: 2px solid var(--accent);
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Changes the button appearance when hovered over. */
+.theme-toggle:hover {
+    background-color: var(--accent);
+    color: #000000;
 }
