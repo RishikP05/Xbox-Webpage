@@ -1,142 +1,164 @@
-/*
-COLOR PALETTE
-Xbox Green: #107C10
-About Green: #159A15
-Dark Background: #121212
-About Background: #F5F7F5
-White: #FFFFFF
-Black: #000000
-Dark Gray: #333333
-*/
 
-/* Styles the overall page background and default font. */
+/* CSS variables for the light theme. */
+:root {
+    --about-bg: #f5f7f5;
+    --about-surface: #ffffff;
+    --about-text: #333333;
+    --about-heading: #159a15;
+    --about-link-hover: #107c10;
+    --about-header: #121212;
+    --about-header-text: #ffffff;
+}
+
+/* CSS variables for the dark theme. */
+[data-theme="dark"] {
+    --about-bg: #101510;
+    --about-surface: #1c241c;
+    --about-text: #f1f5f1;
+    --about-heading: #80c81a;
+    --about-link-hover: #a6e85a;
+    --about-header: #080d08;
+    --about-header-text: #ffffff;
+}
+
+/* Styles the overall About page. */
 body {
     margin: 0;
-    background-color: #F5F7F5;
-    color: #000000;
+    background-color: var(--about-bg);
+    color: var(--about-text);
     font-family: Tahoma, sans-serif;
 }
 
-/* Styles the main header to match the other pages. */
+/* Styles the main header. */
 header {
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: var(--about-header);
+    color: var(--about-header-text);
     text-align: center;
     padding: 20px;
 }
 
-/* Styles the main Xbox heading. */
+/* Styles the Xbox heading. */
 header h1 {
     margin: 0;
-    color: #159A15;
-    font-family: Tahoma, sans-serif;
+    color: var(--about-heading);
     font-size: 32px;
 }
 
 /* Styles the About page subtitle. */
 header h2 {
-    color: #FFFFFF;
-    font-family: Tahoma, sans-serif;
+    color: var(--about-header-text);
     font-size: 24px;
     margin: 10px 0 20px 0;
 }
 
-/* Styles the navigation area below the header. */
+/* Adds spacing to the navigation area. */
 nav {
     margin-top: 15px;
 }
 
 /* Styles the navigation links. */
 nav a {
-    color: #159A15;
-    font-family: Tahoma, sans-serif;
+    color: var(--about-heading);
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Changes the navigation link color when the mouse moves over it. */
+/* Changes the navigation links on hover. */
 nav a:hover {
-    color: #107C10;
+    color: var(--about-link-hover);
     text-decoration: underline;
 }
 
-/* Creates a CSS Grid layout for the main About page content. */
+/* Creates a two-column CSS Grid layout. */
 main {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FFFFFF;
-
-    /* Creates two columns for the main content. */
+    background-color: var(--about-surface);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
 }
 
-/* Adds spacing and structure to each section in the grid. */
+/* Adds spacing to each section. */
 section {
     margin-bottom: 10px;
 }
 
-/* Makes the Social Media section take up both columns. */
+/* Makes the Social Media section span both columns. */
 section:last-child {
     grid-column: 1 / 3;
 }
 
-/* Styles the headings for each section. */
+/* Styles the section headings. */
 section h3 {
-    color: #159A15;
-    font-family: Tahoma, sans-serif;
+    color: var(--about-heading);
     font-size: 24px;
-    border-bottom: 2px solid #159A15;
+    border-bottom: 2px solid var(--about-heading);
     padding-bottom: 6px;
 }
 
-/* Styles the paragraphs on the About page. */
+/* Styles the About page paragraphs. */
 section p {
-    color: #333333;
-    font-family: Tahoma, sans-serif;
+    color: var(--about-text);
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* Styles the LinkedIn social media link. */
+/* Styles the LinkedIn link. */
 .social-link {
-    color: #159A15;
-    font-family: Tahoma, sans-serif;
+    color: var(--about-heading);
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Changes the LinkedIn link when the mouse moves over it. */
+/* Changes the LinkedIn link on hover. */
 .social-link:hover {
-    color: #107C10;
+    color: var(--about-link-hover);
     text-decoration: underline;
 }
 
-/* Changes the grid to one column on smaller screens. */
+/* Styles the theme toggle button. */
+.theme-toggle {
+    display: block;
+    margin: 15px auto 0;
+    padding: 10px 15px;
+    background-color: var(--about-surface);
+    color: var(--about-text);
+    border: 2px solid var(--about-heading);
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Changes the theme button on hover. */
+.theme-toggle:hover {
+    background-color: var(--about-heading);
+    color: #000000;
+}
+
+/* Changes the grid layout on smaller screens. */
 @media (max-width: 700px) {
     main {
         grid-template-columns: 1fr;
     }
 
-    /* Makes the Social Media section fit the single-column layout. */
+    /* Makes Social Media fit one column. */
     section:last-child {
         grid-column: 1;
     }
 }
 
-/* Styles the footer at the bottom of the page. */
+/* Styles the footer. */
 footer {
-    background-color: #121212;
-    color: #FFFFFF;
+    background-color: var(--about-header);
+    color: var(--about-header-text);
     text-align: center;
     padding: 15px;
 }
 
-/* Styles the text inside the footer. */
+/* Styles the footer text. */
 footer p {
     margin: 0;
-    font-family: Tahoma, sans-serif;
 }
