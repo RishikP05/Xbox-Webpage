@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Defines the character encoding. -->
     <meta charset="UTF-8">
+
+    <!-- Makes the page responsive. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Sets the title shown in the browser tab. -->
-    <title>About Xbox</title>
-
-    <!-- Connects this page to its separate external stylesheet. -->
+    <!-- Connects the About page stylesheet. -->
     <link rel="stylesheet" href="about.css">
+
+    <!-- Connects the JavaScript theme system. -->
+    <script src="theme.js" defer></script>
+
+    <title>About Xbox</title>
 </head>
-
 <body>
-
-    <!-- Creates the main header and navigation for the About page. -->
+    <!-- Displays the main header and navigation. -->
     <header>
         <h1>Xbox</h1>
         <h2>About This Site</h2>
 
-        <!-- Provides links to all of the pages on the website. -->
+        <!-- Navigation links to all website pages. -->
         <nav>
             <a href="index.html">Home</a><br>
             <a href="series.html">Xbox Series</a><br>
             <a href="gaming.html">Xbox Game Pass</a><br>
             <a href="about.html">About</a>
         </nav>
+
+        <!-- Switches between light and dark themes. -->
+        <button class="theme-toggle" type="button">Dark Mode</button>
     </header>
 
-    <!-- Contains the information about my personal connection to Xbox. -->
+    <!-- Main content arranged using CSS Grid. -->
     <main>
 
-        <!-- Explains why I created the website and my personal connection to Xbox. -->
+        <!-- Explains why I created the website. -->
         <section>
             <h3>Why I Created This Site</h3>
 
@@ -65,7 +71,7 @@
             </p>
         </section>
 
-        <!-- Explains the personal experiences that motivate my interest in Xbox. -->
+        <!-- Explains my motivation and experiences with Xbox. -->
         <section>
             <h3>My Motivation</h3>
 
@@ -89,12 +95,12 @@
                 Those experiences are a big reason why Xbox has remained important
                 to me. It started with my Xbox One S, but over the years it became
                 something that I associated with having fun, spending time with
-                friends, and enjoying games that I could come back to again and
-                again.
+                friends, and enjoying games that I could come back to again
+                and again.
             </p>
         </section>
 
-        <!-- Provides a link to my personal social media presence. -->
+        <!-- Displays my social media information. -->
         <section>
             <h3>My Social Media</h3>
 
@@ -103,22 +109,20 @@
                 you can find me on LinkedIn using the link below.
             </p>
 
-            <!-- Links to my personal LinkedIn profile. -->
+            <!-- Links to my LinkedIn profile. -->
             <p>
                 <a class="social-link"
                    href="https://www.linkedin.com/in/rishikpoosapati/"
-                   target="_blank">
+                   target="_blank" rel="noopener noreferrer">
                     My LinkedIn
                 </a>
             </p>
         </section>
-
     </main>
 
-    <!-- Creates the footer at the bottom of the page. -->
+    <!-- Displays the About page footer. -->
     <footer>
         <p>About Xbox</p>
     </footer>
-
 </body>
 </html>
