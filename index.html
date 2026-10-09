@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Defines the character encoding for the page. -->
+    <!-- Defines the character encoding. -->
     <meta charset="UTF-8">
-    <!-- Makes the page display correctly on different screen sizes. -->
+
+    <!-- Makes the page responsive. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Connects the page to the external CSS stylesheet. -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Sets the browser tab title. -->
+
+    <!-- Connects the external stylesheet. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connects the JavaScript theme system. -->
+    <script src="theme.js" defer></script>
+
     <title>Xbox</title>
 </head>
 <body>
-    <!-- Groups the webpage content inside one container. -->
+    <!-- Main webpage container. -->
     <div id="container">
-        <!-- Displays the main page heading. -->
-        <header><h1>Xbox</h1><h2>Gaming Through the Years</h2></header>
 
-        <!-- Provides relative links to the three pages. -->
+        <!-- Displays the page heading. -->
+        <header>
+            <h1>Xbox</h1>
+            <h2>Gaming Through the Years</h2>
+        </header>
+
+        <!-- Navigation links to the website pages. -->
         <nav>
             <a href="index.html">Home</a><br>
             <a href="series.html">Xbox Consoles</a><br>
-            <a href="gaming.html">Xbox Game Pass</a>
+            <a href="gaming.html">Xbox Game Pass</a><br>
+            <a href="about.html">About</a>
         </nav>
 
-        <!-- Displays a real Xbox Series X product image. -->
-        <img class="page-image" src="images/xbox-series-x.jpg" alt="Xbox Series X and Series S consoles">
+        <!-- Button that switches between light and dark themes. -->
+        <button class="theme-toggle" type="button">Dark Mode</button>
 
-        <!-- Displays the first paragraph using its own CSS style. -->
-        <p class="paragraph-one">Xbox is a video game console brand from Microsoft. The Xbox family includes several generations of consoles designed for playing games, using online services, and enjoying digital entertainment.</p>
-        <!-- Displays the second paragraph using a different CSS style. -->
-        <p class="paragraph-two">Xbox consoles have developed over time with improvements in graphics, storage, controllers, performance, and online gaming. Each generation has introduced new hardware and features.</p>
-        <!-- Displays the third paragraph using a third CSS style. -->
-        <p class="paragraph-three">Today, Xbox offers modern consoles such as the Xbox Series X and Xbox Series S, along with services that give players many different ways to play.</p>
+        <!-- Displays an Xbox console image. -->
+        <img class="page-image" src="images/xbox-series-x.jpg"
+             alt="Xbox Series X and Series S consoles">
 
-        <!-- Displays the bottom section of the page. -->
-        <footer><p>Xbox</p></footer>
+        <!-- Introduces the Xbox brand. -->
+        <p class="paragraph-one">
+            Xbox is a video game console brand from Microsoft.
+            The Xbox family includes several generations of consoles
+            designed for playing games, using online services,
+            and enjoying digital entertainment.
+        </p>
+
+        <!-- Describes the development of Xbox consoles. -->
+        <p class="paragraph-two">
+            Xbox consoles have developed over time with improvements
+            in graphics, storage, controllers, performance, and
+            online gaming. Each generation has introduced new
+            hardware and features.
+        </p>
+
+        <!-- Describes modern Xbox consoles. -->
+        <p class="paragraph-three">
+            Today, Xbox offers modern consoles such as the Xbox
+            Series X and Xbox Series S, along with services that
+            give players many different ways to play.
+        </p>
+
+        <!-- Displays the page footer. -->
+        <footer>
+            <p>Xbox</p>
+        </footer>
     </div>
 </body>
 </html>
